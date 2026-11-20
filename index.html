@@ -3,38 +3,111 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071b35">
+  <meta name="theme-color" content="#0a2540">
   <meta name="description" content="Connect with Shangrila International Freight Pvt. Ltd. — global air and sea logistics from Nepal.">
   <title>Connect with Shangrila International Freight</title>
   <style>
-    :root{--navy:#071b35;--navy2:#0c2a4c;--gold:#d8b56a;--cream:#f7f5ef;--muted:#b9c6d5}
+    :root{
+      --navy:#0a2540;
+      --navy-light:#163b63;
+      --accent:#d32f2f;
+      --bg:#f2f5f9;
+      --card:#ffffff;
+      --text:#102235;
+      --muted:#5a6b7c;
+    }
     *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;color:#fff;background:
-      radial-gradient(circle at 85% 10%,rgba(216,181,106,.15),transparent 28%),
-      linear-gradient(145deg,var(--navy),#0b2948 58%,#061529);display:flex;justify-content:center;padding:28px 16px}
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family:Arial,Helvetica,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 85% 10%,rgba(211,47,47,.08),transparent 30%),
+        linear-gradient(155deg,#0a2540 0%,#123960 45%,#eef3f8 45.2%,#f6f8fb 100%);
+      display:flex;
+      justify-content:center;
+      padding:28px 16px;
+    }
     .wrap{width:100%;max-width:520px}
-    .card{border:1px solid rgba(216,181,106,.35);border-radius:26px;padding:30px 24px 24px;background:rgba(5,19,37,.62);box-shadow:0 22px 70px rgba(0,0,0,.28);text-align:center;backdrop-filter:blur(8px)}
-    .brandmark{width:86px;height:86px;border-radius:22px;margin:0 auto 16px;border:1px solid rgba(216,181,106,.75);display:grid;place-items:center;color:var(--gold);font-weight:800;font-size:25px;letter-spacing:2px;background:linear-gradient(145deg,#12365c,#07182d)}
-    .eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700}
-    h1{font-size:25px;line-height:1.2;margin:10px 0 9px}
-    .sub{font-size:14px;color:var(--muted);line-height:1.55;margin:0 auto 22px;max-width:370px}
-    .rule{height:1px;background:linear-gradient(90deg,transparent,rgba(216,181,106,.65),transparent);margin:20px 0}
+    .card{
+      border:1px solid rgba(10,37,64,.1);
+      border-top:5px solid var(--accent);
+      border-radius:24px;
+      padding:30px 24px 24px;
+      background:var(--card);
+      box-shadow:0 20px 55px rgba(10,37,64,.16);
+      text-align:center;
+    }
+    .logo-box{
+      width:110px;
+      height:110px;
+      border-radius:20px;
+      margin:0 auto 16px;
+      padding:10px;
+      border:1px solid #e2e8f0;
+      background:#ffffff;
+      display:grid;
+      place-items:center;
+      box-shadow:0 6px 18px rgba(10,37,64,.06);
+    }
+    .logo-box img{
+      max-width:100%;
+      max-height:100%;
+      object-fit:contain;
+      display:block;
+    }
+    .eyebrow{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);font-weight:700}
+    h1{font-size:24px;line-height:1.25;margin:10px 0 8px;color:var(--navy)}
+    .sub{font-size:14px;color:var(--muted);line-height:1.55;margin:0 auto 20px;max-width:370px}
+    .rule{height:1px;background:linear-gradient(90deg,transparent,rgba(10,37,64,.15),transparent);margin:20px 0}
     .links{display:grid;gap:11px}
-    a.btn{display:flex;align-items:center;gap:13px;text-decoration:none;color:#fff;text-align:left;padding:14px 16px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.055);transition:.18s ease}
-    a.btn:hover{transform:translateY(-2px);border-color:var(--gold);background:rgba(216,181,106,.1)}
-    .ico{width:35px;height:35px;border-radius:10px;display:grid;place-items:center;background:rgba(216,181,106,.14);color:var(--gold);font-size:17px;font-weight:700;flex:none}
-    .label{font-weight:700;font-size:15px}.hint{display:block;font-size:11px;color:var(--muted);margin-top:3px}
-    .arrow{margin-left:auto;color:var(--gold);font-size:19px}
-    .foot{color:#9eafc1;font-size:11px;line-height:1.6;margin-top:21px}
-    .foot strong{color:var(--gold);font-weight:600}
-    @media(max-width:380px){.card{padding:24px 16px}h1{font-size:22px}}
+    a.btn{
+      display:flex;
+      align-items:center;
+      gap:13px;
+      text-decoration:none;
+      color:var(--navy);
+      text-align:left;
+      padding:14px 16px;
+      border:1px solid #dce4ee;
+      border-radius:14px;
+      background:#f8fafc;
+      transition:.18s ease;
+    }
+    a.btn:hover{
+      transform:translateY(-2px);
+      border-color:var(--accent);
+      background:#ffffff;
+      box-shadow:0 8px 20px rgba(10,37,64,.08);
+    }
+    .ico{
+      width:36px;
+      height:36px;
+      border-radius:10px;
+      display:grid;
+      place-items:center;
+      background:var(--navy);
+      color:#ffffff;
+      font-size:17px;
+      font-weight:700;
+      flex:none;
+    }
+    a.btn:hover .ico{background:var(--accent)}
+    .label{font-weight:700;font-size:15px}
+    .hint{display:block;font-size:11px;color:var(--muted);margin-top:3px}
+    .arrow{margin-left:auto;color:var(--accent);font-size:20px;font-weight:700}
+    .foot{color:var(--muted);font-size:11px;line-height:1.6;margin-top:20px}
+    .foot strong{color:var(--navy);font-weight:700}
+    @media(max-width:380px){.card{padding:24px 16px}h1{font-size:21px}}
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="card">
-      <!-- Replace this SIF text mark with your official logo image if desired. -->
-      <div class="brandmark" aria-label="SIF">SIF</div>
+      <div class="logo-box">
+        <img src="logo.png" alt="Shangrila International Freight Logo">
+      </div>
       <div class="eyebrow">Global Freight • Local Expertise</div>
       <h1>Shangrila International Freight Pvt. Ltd.</h1>
       <p class="sub">Your connection to reliable global air and sea freight solutions.</p>
