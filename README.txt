@@ -10,7 +10,7 @@ FREE HOSTING (GitHub Pages):
 4. Open Settings > Pages.
 5. Under Build and deployment, choose Deploy from a branch.
 6. Choose branch main and folder /(root), then Save.
-7. GitHub will publish a URL similar to https://YOUR-USERNAME.github.io/sif-digital-connect/
+7. GitHub will publish a URL similar to https://ConnectwithSIF0.github.io/sif-digital-connect/
 
 QR CODE:
 After GitHub gives you the final published URL, create the QR code for that exact URL.
