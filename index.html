@@ -100,6 +100,28 @@
       overflow:hidden;
     }
 
+    /* Soft Logo Watermark Behind the Glass Buttons */
+    .watermark{
+      position:absolute;
+      top:54%;
+      left:50%;
+      transform:translate(-50%, -50%) rotate(-6deg);
+      width:340px;
+      max-width:85%;
+      opacity:0.085;
+      filter:grayscale(100%) invert(1) contrast(140%) blur(0.5px);
+      mix-blend-mode:screen;
+      pointer-events:none;
+      user-select:none;
+      z-index:0;
+    }
+
+    /* Keep all card content above the watermark */
+    .card > *:not(.watermark){
+      position:relative;
+      z-index:1;
+    }
+
     /* Curved Specular Glass Gloss Reflection at Top */
     .card::before{
       content:"";
@@ -108,11 +130,11 @@
       height:65%;
       background:radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.24), transparent 70%);
       pointer-events:none;
+      z-index:2;
     }
 
     /* Elevated Liquid-Rim Logo Capsule */
     .logo-box{
-      position:relative;
       width:96px;
       height:96px;
       border-radius:26px;
@@ -337,6 +359,8 @@
 
   <main class="wrap">
     <section class="card">
+      <img class="watermark" src="logo.jpg" alt="" aria-hidden="true">
+
       <div class="logo-box">
         <img src="logo.jpg" alt="Shangrila International Freight Logo">
       </div>
